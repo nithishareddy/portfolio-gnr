@@ -157,6 +157,12 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
+li:hover {
+  box-shadow: 0 0 3px yellow;
+  margin-top: -10px;
+}
+
+
 
 
 

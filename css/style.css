@@ -801,7 +801,7 @@ main {
   margin-bottom: 7px;
 }
 
-.timeline-list span {
+.timeline-list span:not(.gpa,.course-name) {
   color: var(--vegas-gold);
   font-weight: var(--fw-400);
   line-height: 1.6;
@@ -833,6 +833,29 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.college-name {
+color: goldenrod;
+font-weight: bold;
+font-size:medium;
+font-weight: var(--fw-300)
+}
+.course-name {
+   /* Style for emphasis */
+  color: white;
+  font-weight: var(--fw-300);
+  font-style: italic;
+}
+
+.year,
+.gpa {
+  font-style: italic; /* Optional style for distinction */
+  color: white;
 }
 
 
@@ -1883,6 +1906,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 * RESUME
 	 */
 
-  .timeline-text { max-width: 700px; }
+  .timeline-text { max-width: 700px;margin-left: 4%; }
+  .service-item-title{
+    color: goldenrod;
+  }
 
 }

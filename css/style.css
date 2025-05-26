@@ -211,6 +211,27 @@ article {
   border-radius: inherit;
   z-index: -1;
 }
+nav a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-bar {
+  display: flex;
+  gap: 1rem; /* Adds space between links */
+  justify-content: center; /* Optional: center horizontally */
+  padding: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #f6f5f1; /* or your preferred color */
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  color: #eedf16; /* Add hover effect */
+}
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
@@ -445,8 +466,8 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
-  font-size: 18px;
+  color: var(--light-gray);
+  font-size: 20px;
 }
 
 

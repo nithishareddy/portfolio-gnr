@@ -5,57 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nithisha Reddy Gaddam</title>
-  
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+  <title>Nithisha Gaddam — Full Stack Developer</title>
 
-  <!--
-    - custom css link
-  -->
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts: Inter + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
+  <!-- Particle network canvas -->
+  <canvas id="particles-canvas"></canvas>
 
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- ===================== SIDEBAR ===================== -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
           <img src="images/Profile_nithisha.jpeg" alt="Nithisha" width="80">
+          <span class="status-dot" title="Open to opportunities"></span>
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Nithisha Gaddam">Nithisha Gaddam</h1>
-
-          <p class="title">Web Developer | Cloud | Machine learning</p>
-         
+          <p class="title">
+            <span class="typing-text" data-typing></span><span class="cursor">|</span>
+          </p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -68,52 +54,40 @@
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:nithishareddy1997@gmail.com" class="contact-link">nithishareddy1997@gmail.com</a>
             </div>
-
           </li>
-
-         
 
           <li class="contact-item">
-
             <div class="icon-box">
-              <ion-icon name="School"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
-              <p class="contact-title">College</p>
-
-              <time datetime="">MSCS @ University Of Central FLorida</time>
+              <p class="contact-title">Education</p>
+              <time>MSCS @ University of Central Florida</time>
             </div>
-
           </li>
-
-          
 
         </ul>
 
         <div class="separator"></div>
 
         <ul class="social-list">
-
-          
-
-
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/nithisha-reddy-gaddam-240061153" class="social-link">
+            <a href="https://www.linkedin.com/in/nithisha-reddy-gaddam-240061153" class="social-link" target="_blank" rel="noopener" title="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
+          <li class="social-item">
+            <a href="https://github.com/nithishareddy" class="social-link" target="_blank" rel="noopener" title="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
         </ul>
 
       </div>
@@ -121,278 +95,276 @@
     </aside>
 
 
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- ===================== MAIN CONTENT ===================== -->
     <div class="main-content">
 
-      
+      <article class="about active" data-page="about">
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
+        <!-- Navigation -->
         <nav class="nav-bar" role="navigation" aria-label="Main navigation">
-          <a href="#about">About</a>
+          <a href="#about" class="nav-active">About</a>
           <a href="#education">Education</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#achievements">Achievements</a>
-          
         </nav>
 
-        
 
+        <!-- ---- About ---- -->
         <section id="about" class="about-text">
-          <h3 style="color: rgba(255, 217, 0, 0.781);" class="h3 service-title">About Me</h3>
+          <h3 class="section-title">// About Me</h3>
           <p>
-            <strong>Hi! I am Nithisha.</strong> With over 4+ years of experience, I am driven to leverage my skills in designing and developing Web applications, Machine learning systems and Kubernetes Operators. Proficient in designing and writing clear code using Java, GoLang, Python, and JavaScript, with expertise in frameworks like Micronaut, Spring Boot, Operator-SDK, TensorFlow, and NodeJS.
+            <strong>Hi! I am Nithisha.</strong> With over 5+ years of experience, I am driven to leverage my skills in designing and developing
+            Web applications, <span class="code-highlight ai-highlight">AI/ML systems</span>, and Kubernetes Operators.
+            Proficient in designing and writing clear code using
+            <span class="code-highlight">Java</span>,
+            <span class="code-highlight">Go</span>,
+            <span class="code-highlight">Python</span>,
+            <span class="code-highlight">C++</span>,
+            <span class="code-highlight">SQL &amp; NoSQL</span>,
+            <span class="code-highlight">Linux Systems</span>, and
+            <span class="code-highlight">JavaScript</span>,
+            with expertise in frameworks like Micronaut, Spring Boot, Operator-SDK, TensorFlow, and NodeJS.
           </p>
         </section>
 
+
+        <!-- ---- Education ---- -->
         <section id="education" class="timeline">
 
-          <div class="title-wrapper">
+          <div class="timeline-header">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
-            <h3 style="color: rgba(255, 217, 0, 0.781);" class="h3">Education</h3>
+            <h3 class="section-title no-margin">// Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
               <div class="flex-container">
                 <span class="college-name">University of Central Florida</span>
-                <span class="year">2023-2025</span>
-            </div>
-            <div class="flex-container">
+                <span class="year">2023 – 2025</span>
+              </div>
+              <div class="flex-container">
                 <span class="course-name">Masters in Computer Science</span>
                 <span class="gpa">GPA: 3.97</span>
-            </div>
-
+              </div>
             </li>
 
             <li class="timeline-item">
-
               <div class="flex-container">
-                <span class="college-name">VNR Vignana Jyothi College of Engineering and Technology</span>
-                <span class="year">2015-2019</span>
-            </div>
-            <div class="flex-container">
-                <span class="course-name">Bachelors in Electornics and Communication Engineering</span>
+                <span class="college-name">VNR Vignana Jyothi College of Engineering &amp; Technology</span>
+                <span class="year">2015 – 2019</span>
+              </div>
+              <div class="flex-container">
+                <span class="course-name">Bachelors in Electronics &amp; Communication Engineering</span>
                 <span class="gpa">GPA: 9.31/10</span>
-            </div>
-
+              </div>
             </li>
 
           </ol>
 
         </section>
 
+
+        <!-- ---- Experience ---- -->
         <section id="experience" class="timeline">
 
-          <div class="title-wrapper">
+          <div class="timeline-header">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
-
-            <h3 style="color: rgba(255, 217, 0, 0.781);" class="h3">Experience</h3>
+            <h3 class="section-title no-margin">// Experience</h3>
           </div>
 
           <ol class="timeline-list">
-            <li class="timeline-item">
 
+            <li class="timeline-item">
               <div class="flex-container">
                 <span class="college-name">Oracle</span>
-                <span class="year">Austin, Texas, USA</span>
-            </div>
-            <div class="flex-container">
-                <span class="course-name">Software Engineer Intern</span>
-                <span class="gpa">May 2024-August 2024</span>
-            </div>
-
-              <p class="timeline-text">
-                * Enhanced Kubernetes Operator's codebase using GoLang and Operator-SDK to improve quality by 30%.</p>
-              <p class ="timeline-text"> * Researched and integrated unit and integration testing frameworks for the Operator using Ginkgo and Gomega, by incorporating monkey patching to mock interactions to cloud providers like openstack.</p>
-
+                <span class="year">Remote, TX</span>
+              </div>
+              <div class="flex-container">
+                <span class="course-name">Software Engineer IC2</span>
+                <span class="gpa">Jun 2025 – Present</span>
+              </div>
+              <p class="timeline-text">Engineered Kubernetes autoscaling with KEDA using Go and Operator-SDK, improving scaling reliability by 30% for Oracle Cloud Native SBC microservices. Designed and deployed a production-grade HA architecture on OCI using Helm and Terraform, reducing compute utilization by 20%.</p>
             </li>
 
             <li class="timeline-item">
+              <div class="flex-container">
+                <span class="college-name">Oracle</span>
+                <span class="year">Austin, TX</span>
+              </div>
+              <div class="flex-container">
+                <span class="course-name">Software Engineer Intern</span>
+                <span class="gpa">May 2024 – Aug 2024</span>
+              </div>
+              <p class="timeline-text">Strengthened correctness of Oracle's cnSBC and vNICset Kubernetes Operators by integrating Ginkgo/Gomega test frameworks in Go across CRD-driven reconciliation paths.</p>
+            </li>
 
+            <li class="timeline-item">
               <div class="flex-container">
                 <span class="college-name">Pegasystems</span>
                 <span class="year">Hyderabad, India</span>
-            </div>
-            <div class="flex-container">
+              </div>
+              <div class="flex-container">
                 <span class="course-name">Cloud Development Engineer</span>
-                <span class="gpa">March 2022-July 2023</span>
-            </div>
-
-              <p class="timeline-text">
-                * Developed high-performance Micro-Services for App Registration using Java, Micronaut and MongoDB.</p>
-               <p class="timeline-text">* Enhanced code to maximize test coverage using JUnit and Karate for automated testing.</p>
-               <p class="timeline-text">* Refined the code to mitigate threats by using static code analysis tools like SonarQube .</p>
-               <p class = "timeline-text">* Deployed REST APIs on AWS EC2 instances through CI/CD pipelines using Jenkins.</p>
-               <p class = "timeline-text">* Developed a service to deploy CRDs onto AWS Kubernetes cluster using Go Lang and Make.</p>
-               <p class = "timeline-text">* Contributed to Pega online community discussions to help customers in using the Pega products.</p>
-
+                <span class="gpa">Mar 2022 – Jul 2023</span>
+              </div>
+              <p class="timeline-text">Built the Unified Authentication Service Kubernetes Operator for Pega Infinity using Go and Kubebuilder, implementing custom CRDs and reconciliation logic to manage microservices and secrets on AWS. Optimized MongoDB query performance by 60% through targeted indexing on the Application Registration Service.</p>
             </li>
 
             <li class="timeline-item">
-
               <div class="flex-container">
                 <span class="college-name">Tata Consultancy Services</span>
                 <span class="year">Hyderabad, India</span>
-            </div>
-            <div class="flex-container">
-                <span class="course-name">Software Engineer</span>
-                <span class="gpa">June 2019-March 2022</span>
-            </div>
+              </div>
+              <div class="flex-container">
+                <span class="course-name">Systems Engineer</span>
+                <span class="gpa">Jun 2019 – Mar 2022</span>
+              </div>
+              <p class="timeline-text">Delivered high-traffic healthcare APIs for Humana on GCP using Node.js and MongoDB — including a Claims Payment portal and ETL pipelines that processed large data volumes 20% faster with a 60% improvement in API success rates.</p>
+            </li>
 
-              <p class="timeline-text">* Developed REST APIs using NodeJS to retrieve real time data from MongoDB and deploy them on GCP through CI/CD pipelines using Azure DevOps.</p>
-              <p class="timeline-text">* Enhanced code to maximize test coverage using Mocha and Chai for automated testing.</p>
-              <p class="timeline-text">* Improved API performance by reducing response time by 60% by implementing Circuit Breaker.</p>
-              <p class="timeline-text">* Automated the process to load data from raw text files into MongoDB collections using NodeJS.</p>
-              <p class="timeline-text">* Designed and implemented data loading pipelines using Streamsets to load data into MongoDB.</p>
-              </p>
-
+            <li class="timeline-item">
+              <div class="flex-container">
+                <span class="college-name">Tata Consultancy Services</span>
+                <span class="year">Hyderabad, India</span>
+              </div>
+              <div class="flex-container">
+                <span class="course-name">Research Intern</span>
+                <span class="gpa">2019</span>
+              </div>
+              <p class="timeline-text">Built an OCR model with TensorFlow and OpenCV to extract text from images, applying edge detection preprocessing to improve accuracy.</p>
             </li>
 
           </ol>
 
         </section>
 
-        <section id="projects"class="service">
 
-          <h3 style="color: rgba(255, 217, 0, 0.781);" class="h3 service-title">Projects</h3>
+        <!-- ---- Projects ---- -->
+        <section id="projects" class="service">
+
+          <h3 class="section-title">// Projects</h3>
 
           <ul class="service-list">
 
-
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="images/DataExtractor.png" alt="Web development icon" width="40">
+                <img src="images/DataExtractor.png" alt="DataExtractor" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">DataExtractor</h4>
-
-                <p class="service-item-text">
-                  Developed a web application works like an ETL platform using Python ,HTML and CSS to extract , transform and load data from given CSV files into MongoDB.
-                </p>
+                <p class="service-item-text">ETL platform that extracts, transforms, and loads data from CSV files into MongoDB. Built with Python for data pipelines and a custom web frontend.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">ETL</span>
+                  <span class="tech-tag">HTML/CSS</span>
+                </div>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="images/cleaningbot.png" alt="OS icon" width="40">
+                <img src="images/cleaningbot.png" alt="Cleaning Bot" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cleaning Bot</h4>
-
-                <p class="service-item-text">
-                  Developed vision for cleaning bot to detect trash lying on the floor using Image classification ,Python and OpenCV .
-                </p>
+                <h4 class="h4 service-item-title">Cleaning Bot Vision</h4>
+                <p class="service-item-text">Computer vision system for autonomous cleaning robots that detects trash on the floor using image classification with OpenCV.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">OpenCV</span>
+                  <span class="tech-tag">ML</span>
+                  <span class="tech-tag">Computer Vision</span>
+                </div>
               </div>
-
             </li>
 
-
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="images/Mining.png" alt="design icon" width="40">
+                <img src="images/Mining.png" alt="Vision for Mines" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Vision for Vehicles In Mines</h4>
-
-                <p class="service-item-text">
-                  Designed and trained a Machine Learning model using OpenCV and Deep Learning, to detect humans in line of heavy vehicles in mines and predict the possibility of accidents.
-                </p>
+                <p class="service-item-text">Deep Learning model that detects humans in the path of heavy mining vehicles and predicts accident probability in real time.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Deep Learning</span>
+                  <span class="tech-tag">OpenCV</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Safety AI</span>
+                </div>
               </div>
-
             </li>
-
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="images/OCR.png" alt="mobile app icon" width="40">
+                <img src="images/OCR.png" alt="OCR" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Optical Character Recognition</h4>
-
-                <p class="service-item-text">
-                  Developed an OCR model using Deep Learning ,Python, TensorFlow and OpenCV to extract text from images.Optimized the performance of OCR Model by using pre-processing methods like edge detection using OpenCV.
-                </p>
+                <p class="service-item-text">OCR model built with TensorFlow and OpenCV to extract text from images, optimized via edge detection pre-processing.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">TensorFlow</span>
+                  <span class="tech-tag">OpenCV</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Deep Learning</span>
+                </div>
               </div>
-
             </li>
-
-            
 
           </ul>
 
         </section>
 
-        <section id="achievements"class="testimonials">
 
-          <h3 style="color: rgba(255, 217, 0, 0.781);" class="h3 testimonials-title">Achievements</h3>
+        <!-- ---- Achievements ---- -->
+        <section id="achievements" class="testimonials">
+
+          <h3 class="section-title">// Achievements</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
-
                 <figure class="testimonials-avatar-box">
-                  <img src="images/rbl.jpg" alt="RBL" width="60" data-testimonials-avatar>
+                  <img src="images/rbl.jpg" alt="Hackathon" width="60" data-testimonials-avatar>
                 </figure>
-
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Hack-a-thons</h4>
-
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Won the Techno Utsav Hack-a-thon conducted by Deloitte and received a cash prize of 2,40,000/- INR for a project on detecting health hazards in mining areas.
-                  </p>
+                  <p>Won the Techno Utsav Hack-a-thon conducted by Deloitte and received a cash prize of ₹2,40,000 for detecting health hazards in mining areas.</p>
                 </div>
-
               </div>
             </li>
 
-
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
-
                 <figure class="testimonials-avatar-box">
-                  <img src="images/certification.png" alt="Henry william" width="60" data-testimonials-avatar>
+                  <img src="images/certification.png" alt="Certifications" width="60" data-testimonials-avatar>
                 </figure>
-
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Certifications</h4>
-
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Completed AZ-900 certification and Pega CSA certification.
-                  </p>
+                  <p>Completed AZ-900 (Microsoft Azure Fundamentals) and Pega CSA certifications.</p>
                 </div>
+              </div>
+            </li>
 
+            <li class="testimonials-item">
+              <div class="content-card cert-oracle">
+                <figure class="testimonials-avatar-box">
+                  <img src="images/certification.png" alt="Oracle AI Certification" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title">OCI 2025 AI Foundations</h4>
+                <div class="testimonials-text">
+                  <p>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate — issued by Oracle.</p>
+                </div>
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D4B37B4BFA9713C67D2EFC0CC089F21AEF517118F092D8874981C31D9439D6D2"
+                   class="badge-link" target="_blank" rel="noopener">
+                  <ion-icon name="open-outline"></ion-icon> View Badge
+                </a>
               </div>
             </li>
 
@@ -400,98 +372,82 @@
 
         </section>
 
+
+        <!-- ---- Skills ---- -->
         <section class="skill">
 
-          <h3 style="color: rgba(255, 217, 0, 0.781);" class="h3 skills-title">My skills</h3>
+          <h3 class="section-title">// Skills</h3>
 
           <ul class="skills-list content-card">
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">NodeJS</h5>
                 <data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Java</h5>
                 <data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-
             </li>
-            <li class="skills-item">
 
+            <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">GoLang</h5>
                 <data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Streamsets</h5>
-                <data value="90">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">HTML, CSS, Javascript</h5>
+                <h5 class="h5">HTML, CSS, JavaScript</h5>
                 <data value="90">90%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
-
             </li>
-            <li class="skills-item">
 
+            <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Python</h5>
                 <data value="60">60%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
-
             </li>
-            <li class="skills-item">
 
+            <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">GCP , AWS</h5>
+                <h5 class="h5">Streamsets</h5>
                 <data value="60">60%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
+            </li>
 
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">GCP &amp; AWS</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
             </li>
 
           </ul>
@@ -499,129 +455,65 @@
         </section>
 
 
-        <!--
-          - testimonials modal
-        -->
+        <!-- ---- Tech Stack ---- -->
+        <section class="clients">
 
+          <h3 class="section-title">// Tech Stack</h3>
+
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="#" tabindex="-1"><img src="images/Node-logo.png" alt="Node.js" height="50"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#" tabindex="-1"><img src="images/java-logo.png" alt="Java" height="50"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#" tabindex="-1"><img src="images/Go-Logo.png" alt="GoLang" height="50"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#" tabindex="-1"><img src="images/cloud.jpg" alt="Cloud" height="50"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#" tabindex="-1"><img src="images/AWS-logo.png" alt="AWS" height="50"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#" tabindex="-1"><img src="images/Mongodb-logo.png" alt="MongoDB" height="50"></a>
+            </li>
+          </ul>
+
+        </section>
+
+
+        <!-- ---- Achievements Modal ---- -->
         <div class="modal-container" data-modal-container>
-
           <div class="overlay" data-overlay></div>
-
           <section class="testimonials-modal">
-
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="" alt="" width="80" data-modal-img>
               </figure>
-
-              <img src="images/icon-quote.svg" alt="quote icon">
             </div>
-
             <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
+              <h4 class="h3 modal-title" data-modal-title></h4>
+              <div data-modal-text></div>
             </div>
-
           </section>
-
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 style="color: rgba(255, 217, 0, 0.781);" class="h3 clients-title">Tools and Technologies</h3>
-
-          <ul class="clients-list has-scrollbar">
-            
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/Node-logo.png" alt="client logo" height="90">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/java-logo.png" alt="client logo" height="90">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/Go-Logo.png" alt="client logo" height="90">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/cloud.jpg" alt="client logo">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/AWS-logo.png" alt="client logo" height="90">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/Mongodb-logo.png" alt="client logo" height="90">
-              </a>
-            </li>
-            
-          </ul>
-
-        </section>
 
       </article>
 
-
-
-
-
-
-
-
-
-
-      
     </div>
-
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
+  <!-- custom js -->
   <script src="js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
+  <!-- Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>

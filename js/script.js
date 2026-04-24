@@ -31,7 +31,7 @@ class ParticleNetwork {
         vx: (Math.random() - 0.5) * 0.38,
         vy: (Math.random() - 0.5) * 0.38,
         size: Math.random() * 1.6 + 0.5,
-        opacity: Math.random() * 0.45 + 0.15
+        opacity: Math.random() * 0.25 + 0.08
       });
     }
   }
@@ -50,7 +50,7 @@ class ParticleNetwork {
       // Draw dot
       this.ctx.beginPath();
       this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      this.ctx.fillStyle = `rgba(0, 212, 255, ${p.opacity})`;
+      this.ctx.fillStyle = `rgba(79, 70, 229, ${p.opacity})`;
       this.ctx.fill();
 
       // Draw connections
@@ -65,7 +65,7 @@ class ParticleNetwork {
           this.ctx.beginPath();
           this.ctx.moveTo(p.x, p.y);
           this.ctx.lineTo(q.x, q.y);
-          this.ctx.strokeStyle = `rgba(0, 212, 255, ${alpha})`;
+          this.ctx.strokeStyle = `rgba(79, 70, 229, ${alpha})`;
           this.ctx.lineWidth = 0.6;
           this.ctx.stroke();
         }

@@ -768,7 +768,6 @@ article.active { display: block; }
   width: 30px;
   height: 30px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(73%) sepia(73%) saturate(500%) hue-rotate(162deg) brightness(105%);
 }
 
 .service-content-box {

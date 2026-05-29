@@ -275,8 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new TypeWriter(typingEl, [
       'Full Stack Developer',
       'Cloud Engineer',
-      'AI Enthusiast',
-      'Kubernetes Operator Dev'
+      'AI Enthusiast'
     ]);
   }
 

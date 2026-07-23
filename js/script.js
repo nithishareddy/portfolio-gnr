@@ -220,14 +220,20 @@ function initNav() {
 /* ================================================================
    SIDEBAR TOGGLE
    ================================================================ */
-const sidebar    = document.querySelector('[data-sidebar]');
-const sidebarBtn = document.querySelector('[data-sidebar-btn]');
+function setupInfoToggle(btnSelector, panelSelector) {
+  const btn   = document.querySelector(btnSelector);
+  const panel = document.querySelector(panelSelector);
 
-if (sidebarBtn) {
-  sidebarBtn.addEventListener('click', () => {
-    if (sidebar) sidebar.classList.toggle('active');
-  });
+  if (btn && panel) {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+      panel.classList.toggle('active');
+    });
+  }
 }
+
+setupInfoToggle('[data-sidebar-btn]', '[data-sidebar-more]');
+setupInfoToggle('[data-education-btn]', '[data-education-more]');
 
 
 /* ================================================================

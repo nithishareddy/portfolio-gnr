@@ -153,7 +153,7 @@ address { font-style: normal; }
 /* Section heading: terminal comment style */
 .section-title {
   font-family: var(--font-mono);
-  font-size: var(--fs-xl);
+  font-size: var(--fs-2xl);
   font-weight: 500;
   color: var(--cyan);
   margin-bottom: var(--sp-xl);
@@ -352,11 +352,11 @@ main {
   transition: transform var(--t);
 }
 
-.sidebar.active .info_more-btn ion-icon {
+.info_more-btn.active ion-icon {
   transform: rotate(180deg);
 }
 
-/* Expandable contact section */
+/* Expandable contact / education sections */
 .sidebar-info_more {
   max-height: 0;
   overflow: hidden;
@@ -364,7 +364,7 @@ main {
   padding: 0 var(--sp-lg);
 }
 
-.sidebar.active .sidebar-info_more {
+.sidebar-info_more.active {
   max-height: 480px;
   padding-bottom: var(--sp-lg);
 }
@@ -631,9 +631,9 @@ article.active { display: block; }
 .gpa {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
-  color: var(--cyan);
-  background: var(--cyan-dim);
-  border: 1px solid var(--cyan-border);
+  color: var(--purple);
+  background: var(--purple-dim);
+  border: 1px solid var(--purple-border);
   padding: 2px 9px;
   border-radius: var(--r-full);
   white-space: nowrap;
